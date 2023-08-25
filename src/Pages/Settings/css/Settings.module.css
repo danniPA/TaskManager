@@ -1,0 +1,53 @@
+.settings_container{
+    display: flex;
+    gap:10px;
+    border-bottom: 1px solid;
+    justify-content: center;
+    margin: 20px;
+}
+
+.table_button{
+    border: 1px solid;
+    min-width: fit-content;
+    padding: 5px;
+    font-size: 20px;
+    transition: 200ms;
+    align-items: center; 
+    border-bottom: none; 
+    margin-inline: 100px;
+}
+
+.logo{
+    font-size:30px;
+    text-align: center;   
+    flex: 4;
+    background-color: inherit;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+    .table_button{
+        margin-inline: 50px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .table_button{
+        margin-inline: 20px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .settings_container{
+        border: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table_button{
+        width: fit-content;
+        padding-inline: 20px;
+        border-bottom: 1px solid ;
+    }
+}
